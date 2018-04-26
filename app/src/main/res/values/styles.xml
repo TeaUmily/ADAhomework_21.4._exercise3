@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleBoxLook_LeftLayout">
+        <item name="android:fontFamily">@font/graduate</item>
+        <item name="android:background">@color/dark_theme_color</item>
+        <item name="android:textColor">@color/dirty_white_color</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Education_EditText">
+        <item name="android:enabled">false</item>
+        <item name="android:fontFamily">@font/droid_serif</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:textSize">7sp</item>
+        <item name="android:textColor">@color/dark_theme_color</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_width">130dp</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:maxLength">400</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/light_theme_color</item>
+    </style>
+
+    <style name="Skills_EditText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/droid_serif</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_weight">0.8</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/dark_theme_color</item>
+        <item name="android:textSize">5sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/light_theme_color</item>
+    </style>
+
+    <style name="Contact_EditText">
+        <item name="android:fontFamily">@font/droid_serif</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">7sp</item>
+        <item name="android:textColor">@color/dark_theme_color</item>
+        <item name="android:background">@color/light_theme_color</item>
+
+    </style>
+
+
+    <style name="TitleBox_look_RightLayout">
+        <item name="android:fontFamily">@font/graduate</item>
+        <item name="android:background">@color/light_theme_color</item>
+        <item name="android:textColor">@color/dark_theme_color</item>
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+       <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="BigBox_look">
+        <item name="android:fontFamily">@font/droid_serif</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/dirty_white_color</item>
+        <item name="android:textSize">7sp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColor">@color/dark_theme_color</item>
+
+    </style>
+
+    <style name="Social_Media_EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">4sp</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:maxLength">90</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/dirty_white_color</item>
+        <item name="android:fontFamily">@font/droid_serif</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="Social_Media_Layout">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Skills_LinearLayout_look">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_margin">5dp</item>
+
+    </style>
+
+
+    <style name="Title_Bottom_RightLayout">
+        <item name="android:enabled">false</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/dirty_white_color</item>
+        <item name="android:fontFamily">@font/graduate</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="Social_Media_ImageView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.8</item>
+    </style>
+
+</resources>

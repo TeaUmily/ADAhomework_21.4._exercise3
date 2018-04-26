@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Curriculum Vitae</string>
+    <string name="edittext_person_name">Terezija Umiljanović</string>
+    <string name="high_school_name">2012-2016 Isidor Krsnjavi High School Nasice</string>
+    <string name="faculty_name">2016- Faculty of Electrical Engineering, Computer Science and Information Technology Osijek</string>
+    <string name="skill_1_name">Monopoly</string>
+    <string name="skill_2_name">Risk</string>
+    <string name="skill_3_name">Catan</string>
+    <string name="skill_5_name">Drzava/Grad/selo</string>
+    <string name="skill_4_name">Scotland Yard</string>
+    <string name="email_edittext">tumiljanovic@etfos.hr</string>
+    <string name="location_edittext">Osijek</string>
+    <string name="education">EDUCATION</string>
+    <string name="skills">SKILLS</string>
+    <string name="about_me">ABOUT ME</string>
+    <string name="experience">EXPERIENCE</string>
+    <string name="interests">INTERESTS</string>
+    <string name="social">SOCIAL</string>
+</resources>

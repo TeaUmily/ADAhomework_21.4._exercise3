@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_theme_color">
+
+        <Button
+            android:id="@+id/Edit_Button"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_icon" />
+
+
+        <EditText
+            android:id="@+id/Name_EditText"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:enabled="false"
+            android:fontFamily="@font/graduate"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="@string/edittext_person_name"
+            android:textColor="@color/dirty_white_color" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:src="@mipmap/myimage"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Left"
+        android:layout_below="@+id/RelativeLayout_Top"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_theme_color">
+
+        <TextView
+            android:id="@+id/Education_TextView"
+            style="@style/TitleBoxLook_LeftLayout"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/graduate"
+            android:text="@string/education" />
+
+        <EditText
+            android:id="@+id/School_EditText"
+            style="@style/Education_EditText"
+            android:layout_below="@+id/Education_TextView"
+            android:layout_margin="5dp"
+            android:text="@string/high_school_name" />
+
+        <EditText
+            android:id="@+id/Faculty_EditText"
+            style="@style/Education_EditText"
+            android:layout_below="@id/School_EditText"
+            android:layout_margin="5dp"
+            android:text="@string/faculty_name"
+            />
+
+        <TextView
+            android:id="@+id/Skills_TextView"
+            style="@style/TitleBoxLook_LeftLayout"
+            android:layout_below="@+id/Faculty_EditText"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/skills"
+            />
+
+        <LinearLayout
+           android:id="@+id/Skill_1_LinearLayout"
+           android:layout_below="@+id/Skills_TextView"
+           style="@style/Skills_LinearLayout_look">
+
+           <EditText
+               android:id="@+id/skill_1_EditText"
+               android:text="@string/skill_1_name"
+               style="@style/Skills_EditText"/>
+
+           <ProgressBar
+               android:id="@+id/skill_1_progressbar"
+               style="?android:attr/progressBarStyleHorizontal"
+               android:progressTint="@color/dark_theme_color"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:indeterminate="false"
+               android:max="10"
+               android:progress="7" />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Skill_2_LinearLayout"
+            style="@style/Skills_LinearLayout_look"
+            android:layout_below="@+id/Skill_1_LinearLayout">
+
+            <EditText
+                android:id="@+id/skill_2_EditText"
+                android:text="@string/skill_2_name"
+                style="@style/Skills_EditText"/>
+
+            <ProgressBar
+                android:id="@+id/skill_2_progressbar"
+                android:progressTint="@color/dark_theme_color"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="8" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Skill_3_LinearLayout"
+            style="@style/Skills_LinearLayout_look"
+            android:layout_below="@+id/Skill_2_LinearLayout">
+
+            <EditText
+                android:id="@+id/skill_3_EditText"
+                android:text="@string/skill_3_name"
+                style="@style/Skills_EditText"/>
+
+            <ProgressBar
+                android:id="@+id/skill_3_progressbar"
+                android:progressTint="@color/dark_theme_color"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Skill_4_LinearLayout"
+            style="@style/Skills_LinearLayout_look"
+            android:layout_below="@+id/Skill_3_LinearLayout">
+
+            <EditText
+                android:id="@+id/skill_4_EditText"
+                android:text="@string/skill_4_name"
+                style="@style/Skills_EditText"/>
+
+            <ProgressBar
+                android:progressTint="@color/dark_theme_color"
+                android:id="@+id/skill_4_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Skill_5_LinearLayout"
+            style="@style/Skills_LinearLayout_look"
+            android:layout_below="@+id/Skill_4_LinearLayout">
+
+            <EditText
+                android:id="@+id/skill_5_EditText"
+                android:text="@string/skill_5_name"
+                style="@style/Skills_EditText"/>
+
+            <ProgressBar
+                android:id="@+id/skill_5_progressbar"
+                android:progressTint="@color/dark_theme_color"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Contact_TextView"
+            style="@style/TitleBoxLook_LeftLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Skill_5_LinearLayout"
+            android:layout_margin="10dp"
+            android:text="CONTACT"
+            />
+
+            <EditText
+                android:id="@+id/mobile_contact_edittext"
+                android:layout_width="110dp"
+                android:layout_below="@+id/Contact_TextView"
+                style="@style/Contact_EditText"
+                android:backgroundTint="@color/light_theme_color"
+                android:inputType="number"
+                android:text="123 456 7890"
+                android:drawableLeft="@drawable/mobile_icon" />
+
+            <EditText
+                android:id="@+id/email_edittext"
+                android:layout_width="120dp"
+                android:layout_below="@+id/mobile_contact_edittext"
+                android:text="@string/email_edittext"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/email_icon"
+                style="@style/Contact_EditText"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:maxLength="50" />
+
+            <EditText
+                android:id="@+id/location_edittext"
+                android:layout_width="110dp"
+                android:layout_below="@+id/email_edittext"
+                android:text="@string/location_edittext"
+                android:drawableLeft="@drawable/location_icon"
+                style="@style/Contact_EditText"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:maxLength="50" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/RelativeLayout_Left"
+        android:layout_below="@+id/RelativeLayout_Top"
+        android:background="@color/dirty_white_color">
+
+        <TextView
+            android:id="@+id/About_Me_TextView"
+            style="@style/TitleBox_look_RightLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="@string/about_me" />
+
+        <EditText
+            android:id="@+id/about_me_edittext"
+            android:layout_below="@+id/About_Me_TextView"
+            android:text="Hi, my name is Terezija. I am 21 year old sophomore. I am relatively new in technology world and I probably don't have enough experience but am willing to discover and accept new ideas which can be put into practice effectively.
+I have a creative mind and am always up for new challenges. I am able to motivate and direct my talents and skills to reach goals. I consider myself hardworking, reliable, helpful, organised, friendly and honest.
+"
+            style="@style/BigBox_look" />
+
+        <TextView
+            android:id="@+id/Experience_TextView"
+            style="@style/TitleBox_look_RightLayout"
+            android:layout_below="@+id/about_me_edittext"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/experience"/>
+
+        <EditText
+            android:id="@+id/experience_edittext"
+            android:layout_below="@+id/Experience_TextView"
+            android:text="C, C++, C#, java... to be continued :) It looks better and smarter when it is filled with text, soooooooo dkslajd jdskalj dsj ejrjd jd saj ejk sdalj jdska jdjlsadsjka jdksjajie jekdsa iejea dsklaj jdksajjdskja dskajdkjakdjkadj jsad jslak djlsak dlaj dsjaj dslajdncjdk
+ jdflsfjfkdjsfjdsjf jfdks fj fdjks fds fdlsjdksjajdls dsajdj jjkfd jdska iiere f dskjke jlsd je šdfćds lf dskf ds kfdlskfoeksld kfoedlsk fd kk kfdksl kfdsčsakjdklsaj"
+            style="@style/BigBox_look" />
+
+        <LinearLayout
+
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/experience_edittext">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/Interests_EditText"
+                    android:text="@string/interests"
+                    style="@style/Title_Bottom_RightLayout"
+                    />
+
+                <ImageView
+                    android:id="@+id/coffee_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/Interests_EditText"
+                    android:src="@drawable/coffee_icon" />
+
+                <ImageView
+                    android:id="@+id/roller_skates_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/coffee_ImageView"
+                    android:layout_below="@+id/Interests_EditText"
+                    android:src="@drawable/roller_skates_icon" />
+
+                <ImageView
+                    android:id="@+id/coding_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/Interests_EditText"
+                    android:layout_toRightOf="@+id/roller_skates_ImageView"
+                    android:src="@drawable/coding_icon"
+                    android:layout_alignParentRight="true" />
+
+                <ImageView
+                    android:id="@+id/popcorn_time_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/coffee_ImageView"
+                    android:src="@drawable/popcorn_time_icon" />
+
+                <ImageView
+                    android:id="@+id/baking_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/roller_skates_ImageView"
+                    android:layout_toRightOf="@+id/popcorn_time_ImageView"
+                    android:src="@drawable/baking_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/baking_ImageView"
+                    android:layout_below="@id/coding_ImageView"
+                    android:src="@drawable/reading_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/Social_Media_EditText"
+                    style="@style/Title_Bottom_RightLayout"
+                    android:background="@color/dirty_white_color"
+                    android:text="@string/social" />
+
+                <LinearLayout
+                    android:id="@+id/facebook_LinearLayout"
+                    style="@style/Social_Media_Layout"
+                    android:layout_below="@id/Social_Media_EditText">
+
+                    <ImageView
+                        style="@style/Social_Media_ImageView"
+                        android:src="@drawable/facebook_icon" />
+
+                    <EditText
+                        android:id="@+id/facebook_EditText"
+                        style="@style/Social_Media_EditText"
+                        android:text="https://www.facebook.com/terezija.umiljanovic"
+                        android:background="@color/dirty_white_color"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/skype_LinearLayout"
+                    style="@style/Social_Media_Layout"
+                    android:layout_below="@id/facebook_LinearLayout">
+
+                    <ImageView
+                        style="@style/Social_Media_ImageView"
+                        android:src="@drawable/skype_icon" />
+
+                    <EditText
+                        android:id="@+id/skype_EditText"
+                        android:text="terezija umiljanovic"
+                        style="@style/Social_Media_EditText"
+                        android:background="@color/dirty_white_color"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/twitter_LinearLayout"
+                    style="@style/Social_Media_Layout"
+                    android:layout_below="@id/skype_LinearLayout">
+
+                    <ImageView
+                        style="@style/Social_Media_ImageView"
+                        android:src="@drawable/twitter_icon" />
+
+                    <EditText
+                        android:id="@+id/twitter_EditText"
+                        android:text="don't have it"
+                        style="@style/Social_Media_EditText"
+                        android:background="@color/dirty_white_color"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
