@@ -276,7 +276,7 @@ I have a creative mind and am always up for new challenges. I am able to motivat
         <EditText
             android:id="@+id/experience_edittext"
             android:layout_below="@+id/Experience_TextView"
-            android:text="C, C++, C#, java... to be continued :) It looks better and smarter when it is filled with text, soooooooo dkslajd jdskalj dsj ejrjd jd saj ejk sdalj jdska jdjlsadsjka jdksjajie jekdsa iejea dsklaj jdksajjdskja dskajdkjakdjkadj jsad jslak djlsak dlaj dsjaj dslajdncjdk
+            android:text="C, C++, C#, java... to be continued :) It looks better and smarter when it is fill with text, soooooooo dkslajd jdskalj dsj ejrjd jd saj ejk sdalj jdska jdjlsadsjka jdksjajie jekdsa iejea dsklaj jdksajjdskja dskajdkjakdjkadj jsad jslak djlsak dlaj dsjaj dslajdncjdk
  jdflsfjfkdjsfjdsjf jfdks fj fdjks fds fdlsjdksjajdls dsajdj jjkfd jdska iiere f dskjke jlsd je šdfćds lf dskf ds kfdlskfoeksld kfoedlsk fd kk kfdksl kfdsčsakjdklsaj"
             style="@style/BigBox_look" />
 
