@@ -260,7 +260,7 @@
         <EditText
             android:id="@+id/about_me_edittext"
             android:layout_below="@+id/About_Me_TextView"
-            android:text="Hi, my name is Terezija. I am 21 years old sophomore. I am relatively new in technology world and I probably don't have enough experience but am willing to discover and accept new ideas which can be put into practice effectively.
+            android:text="Hi, my name is Terezija. I am 21 year old sophomore. I am relatively new in technology world and I probably don't have enough experience but am willing to discover and accept new ideas which can be put into practice effectively.
 I have a creative mind and am always up for new challenges. I am able to motivate and direct my talents and skills to reach goals. I consider myself hardworking, reliable, helpful, organised, friendly and honest.
 "
             style="@style/BigBox_look" />
