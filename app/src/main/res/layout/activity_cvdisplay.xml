@@ -18,7 +18,7 @@
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:background="@drawable/edit_icon" />
 
 
@@ -26,7 +26,7 @@
             android:id="@+id/Name_EditText"
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_margin="10dp"
             android:enabled="false"
@@ -60,6 +60,8 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
             android:fontFamily="@font/graduate"
             android:text="@string/education" />
 
@@ -68,10 +70,14 @@
             style="@style/Education_EditText"
             android:layout_below="@+id/Education_TextView"
             android:layout_margin="5dp"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
             android:text="@string/high_school_name" />
 
         <EditText
             android:id="@+id/Faculty_EditText"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
             style="@style/Education_EditText"
             android:layout_below="@id/School_EditText"
             android:layout_margin="5dp"
@@ -80,6 +86,8 @@
 
         <TextView
             android:id="@+id/Skills_TextView"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
             style="@style/TitleBoxLook_LeftLayout"
             android:layout_below="@+id/Faculty_EditText"
             android:layout_margin="15dp"
@@ -89,12 +97,17 @@
 
         <LinearLayout
            android:id="@+id/Skill_1_LinearLayout"
+            android:orientation="horizontal"
            android:layout_below="@+id/Skills_TextView"
            style="@style/Skills_LinearLayout_look">
 
            <EditText
                android:id="@+id/skill_1_EditText"
                android:text="@string/skill_1_name"
+               android:layout_height="match_parent"
+               android:layout_width="0dp"
+               android:inputType="text"
+               android:layout_weight="0.8"
                style="@style/Skills_EditText"/>
 
            <ProgressBar
@@ -113,11 +126,16 @@
         <LinearLayout
             android:id="@+id/Skill_2_LinearLayout"
             style="@style/Skills_LinearLayout_look"
+            android:orientation="horizontal"
             android:layout_below="@+id/Skill_1_LinearLayout">
 
             <EditText
                 android:id="@+id/skill_2_EditText"
                 android:text="@string/skill_2_name"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
                 style="@style/Skills_EditText"/>
 
             <ProgressBar
@@ -135,11 +153,16 @@
         <LinearLayout
             android:id="@+id/Skill_3_LinearLayout"
             style="@style/Skills_LinearLayout_look"
+            android:orientation="horizontal"
             android:layout_below="@+id/Skill_2_LinearLayout">
 
             <EditText
                 android:id="@+id/skill_3_EditText"
                 android:text="@string/skill_3_name"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
                 style="@style/Skills_EditText"/>
 
             <ProgressBar
@@ -157,11 +180,16 @@
         <LinearLayout
             android:id="@+id/Skill_4_LinearLayout"
             style="@style/Skills_LinearLayout_look"
+            android:orientation="horizontal"
             android:layout_below="@+id/Skill_3_LinearLayout">
 
             <EditText
                 android:id="@+id/skill_4_EditText"
                 android:text="@string/skill_4_name"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:inputType="text"
                 style="@style/Skills_EditText"/>
 
             <ProgressBar
@@ -179,11 +207,16 @@
         <LinearLayout
             android:id="@+id/Skill_5_LinearLayout"
             style="@style/Skills_LinearLayout_look"
+            android:orientation="horizontal"
             android:layout_below="@+id/Skill_4_LinearLayout">
 
             <EditText
                 android:id="@+id/skill_5_EditText"
                 android:text="@string/skill_5_name"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
                 style="@style/Skills_EditText"/>
 
             <ProgressBar
@@ -200,30 +233,34 @@
 
         <TextView
             android:id="@+id/Contact_TextView"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
             style="@style/TitleBoxLook_LeftLayout"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/Skill_5_LinearLayout"
             android:layout_margin="10dp"
-            android:text="CONTACT"
+            android:text="@string/contact"
             />
 
             <EditText
                 android:id="@+id/mobile_contact_edittext"
                 android:layout_width="110dp"
+                android:layout_height="20dp"
                 android:layout_below="@+id/Contact_TextView"
                 style="@style/Contact_EditText"
                 android:backgroundTint="@color/light_theme_color"
                 android:inputType="number"
-                android:text="123 456 7890"
-                android:drawableLeft="@drawable/mobile_icon" />
+                android:text="@string/mobile_number"
+                android:drawableStart="@drawable/mobile_icon" />
 
             <EditText
                 android:id="@+id/email_edittext"
                 android:layout_width="120dp"
+                android:layout_height="20dp"
                 android:layout_below="@+id/mobile_contact_edittext"
                 android:text="@string/email_edittext"
                 android:layout_margin="10dp"
-                android:drawableLeft="@drawable/email_icon"
+                android:drawableStart="@drawable/email_icon"
                 style="@style/Contact_EditText"
                 android:inputType="textEmailAddress|textMultiLine"
                 android:maxLength="50" />
@@ -231,9 +268,10 @@
             <EditText
                 android:id="@+id/location_edittext"
                 android:layout_width="110dp"
+                android:layout_height="20dp"
                 android:layout_below="@+id/email_edittext"
                 android:text="@string/location_edittext"
-                android:drawableLeft="@drawable/location_icon"
+                android:drawableStart="@drawable/location_icon"
                 style="@style/Contact_EditText"
                 android:inputType="textEmailAddress|textMultiLine"
                 android:maxLength="50" />
@@ -245,8 +283,8 @@
     <RelativeLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/RelativeLayout_Left"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/RelativeLayout_Left"
         android:layout_below="@+id/RelativeLayout_Top"
         android:background="@color/dirty_white_color">
 
@@ -255,14 +293,16 @@
             style="@style/TitleBox_look_RightLayout"
             android:layout_centerHorizontal="true"
             android:layout_margin="20dp"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
             android:text="@string/about_me" />
 
         <EditText
             android:id="@+id/about_me_edittext"
             android:layout_below="@+id/About_Me_TextView"
-            android:text="Hi, my name is Terezija. I am 21 year old sophomore. I am relatively new in technology world and I probably don't have enough experience but am willing to discover and accept new ideas which can be put into practice effectively.
-I have a creative mind and am always up for new challenges. I am able to motivate and direct my talents and skills to reach goals. I consider myself hardworking, reliable, helpful, organised, friendly and honest.
-"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:text="@string/about_me_text"
             style="@style/BigBox_look" />
 
         <TextView
@@ -270,22 +310,27 @@ I have a creative mind and am always up for new challenges. I am able to motivat
             style="@style/TitleBox_look_RightLayout"
             android:layout_below="@+id/about_me_edittext"
             android:layout_margin="15dp"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
             android:layout_centerHorizontal="true"
             android:text="@string/experience"/>
 
         <EditText
             android:id="@+id/experience_edittext"
             android:layout_below="@+id/Experience_TextView"
-            android:text="C, C++, C#, java... to be continued :) It looks better and smarter when it is filled with text, soooooooo dkslajd jdskalj dsj ejrjd jd saj ejk sdalj jdska jdjlsadsjka jdksjajie jekdsa iejea dsklaj jdksajjdskja dskajdkjakdjkadj jsad jslak djlsak dlaj dsjaj dslajdncjdk
- jdflsfjfkdjsfjdsjf jfdks fj fdjks fds fdlsjdksjajdls dsajdj jjkfd jdska iiere f dskjke jlsd je šdfćds lf dskf ds kfdlskfoeksld kfoedlsk fd kk kfdksl kfdsčsakjdklsaj"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:text="@string/experience_text"
             style="@style/BigBox_look" />
 
         <LinearLayout
 
             android:layout_width="220dp"
             android:layout_height="80dp"
+            android:orientation="horizontal"
             android:layout_margin="10dp"
             android:layout_centerHorizontal="true"
+            android:baselineAligned="false"
             android:layout_below="@+id/experience_edittext">
 
             <RelativeLayout
@@ -293,7 +338,7 @@ I have a creative mind and am always up for new challenges. I am able to motivat
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <EditText
+                <TextView
                     android:id="@+id/Interests_EditText"
                     android:text="@string/interests"
                     style="@style/Title_Bottom_RightLayout"
@@ -311,7 +356,7 @@ I have a creative mind and am always up for new challenges. I am able to motivat
                     android:id="@+id/roller_skates_ImageView"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_toRightOf="@+id/coffee_ImageView"
+                    android:layout_toEndOf="@+id/coffee_ImageView"
                     android:layout_below="@+id/Interests_EditText"
                     android:src="@drawable/roller_skates_icon" />
 
@@ -320,9 +365,9 @@ I have a creative mind and am always up for new challenges. I am able to motivat
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_below="@+id/Interests_EditText"
-                    android:layout_toRightOf="@+id/roller_skates_ImageView"
+                    android:layout_toEndOf="@+id/roller_skates_ImageView"
                     android:src="@drawable/coding_icon"
-                    android:layout_alignParentRight="true" />
+                    android:layout_alignParentEnd="true" />
 
                 <ImageView
                     android:id="@+id/popcorn_time_ImageView"
@@ -339,15 +384,15 @@ I have a creative mind and am always up for new challenges. I am able to motivat
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
                     android:layout_below="@id/roller_skates_ImageView"
-                    android:layout_toRightOf="@+id/popcorn_time_ImageView"
+                    android:layout_toEndOf="@+id/popcorn_time_ImageView"
                     android:src="@drawable/baking_icon" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_toRightOf="@+id/baking_ImageView"
+                    android:layout_toEndOf="@+id/baking_ImageView"
                     android:layout_below="@id/coding_ImageView"
                     android:src="@drawable/reading_icon" />
 
@@ -358,7 +403,7 @@ I have a creative mind and am always up for new challenges. I am able to motivat
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <EditText
+                <TextView
                     android:id="@+id/Social_Media_EditText"
                     style="@style/Title_Bottom_RightLayout"
                     android:background="@color/dirty_white_color"
@@ -366,7 +411,10 @@ I have a creative mind and am always up for new challenges. I am able to motivat
 
                 <LinearLayout
                     android:id="@+id/facebook_LinearLayout"
-                    style="@style/Social_Media_Layout"
+                    android:layout_width="80dp"
+                    android:orientation="horizontal"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_below="@id/Social_Media_EditText">
 
                     <ImageView
@@ -376,14 +424,17 @@ I have a creative mind and am always up for new challenges. I am able to motivat
                     <EditText
                         android:id="@+id/facebook_EditText"
                         style="@style/Social_Media_EditText"
-                        android:text="https://www.facebook.com/terezija.umiljanovic"
+                        android:text="@string/facebook_account"
                         android:background="@color/dirty_white_color"/>
                 </LinearLayout>
 
 
                 <LinearLayout
                     android:id="@+id/skype_LinearLayout"
-                    style="@style/Social_Media_Layout"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
                     android:layout_below="@id/facebook_LinearLayout">
 
                     <ImageView
@@ -392,7 +443,7 @@ I have a creative mind and am always up for new challenges. I am able to motivat
 
                     <EditText
                         android:id="@+id/skype_EditText"
-                        android:text="terezija umiljanovic"
+                        android:text="@string/skype_name"
                         style="@style/Social_Media_EditText"
                         android:background="@color/dirty_white_color"/>
 
@@ -400,7 +451,10 @@ I have a creative mind and am always up for new challenges. I am able to motivat
 
                 <LinearLayout
                     android:id="@+id/twitter_LinearLayout"
-                    style="@style/Social_Media_Layout"
+                    android:layout_width="80dp"
+                    android:orientation="horizontal"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_below="@id/skype_LinearLayout">
 
                     <ImageView
@@ -409,7 +463,7 @@ I have a creative mind and am always up for new challenges. I am able to motivat
 
                     <EditText
                         android:id="@+id/twitter_EditText"
-                        android:text="don't have it"
+                        android:text="@string/twitter_account"
                         style="@style/Social_Media_EditText"
                         android:background="@color/dirty_white_color"/>
 
